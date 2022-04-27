@@ -25,12 +25,12 @@ body{
 /* 鼠标移入小星星，星星变图片 */
 .star:hover{
     /* 设置背景图片 不平铺 */
-    background: url("1.jpg") no-repeat;
+    background: url("tree.jpg") no-repeat;
     /* 保持原有尺寸比例，裁切长边 */
     background-size: cover;
     background-position: center;
     width: 50vw;
-    height: 50vh;
+    height: 100vh;
     border-radius: 20px;
     /* 取消裁切五角星 */
     clip-path: none;
