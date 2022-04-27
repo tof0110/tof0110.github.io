@@ -1,6 +1,6 @@
 /* 引用网络字体（Kanit字体） */
 @import url("http://fonts.googleapis.com/css?family=Kanit");
-
+https://github.com/tof0110/tof0110.github.io/blob/main/23.css
 *{
     /* 初始化 */
     margin: 0;
@@ -30,7 +30,7 @@ body{
     background-size: cover;
     background-position: center;
     width: 50vw;
-    height: 80vh;
+    height: 70vh;
     border-radius: 20px;
     /* 取消裁切五角星 */
     clip-path: none;
@@ -43,7 +43,7 @@ body{
     content: "";
     /* 绝对定位 */
     position: absolute;
-    top: 55vh;
+    top: 25vh;
     width: 100%;
     text-align: center;
     color: #555;
