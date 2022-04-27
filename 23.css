@@ -31,7 +31,7 @@ body{
     background-position: center;
     width: 50vw;
     height: 70vh;
-    border-radius: 20px;
+    border-radius: 55px;
     /* 取消裁切五角星 */
     clip-path: none;
     /* 计算left，让其居中 */
