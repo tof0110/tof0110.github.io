@@ -78,7 +78,7 @@ ul li{
     /* 通过var函数调用自定义属性--h，设置每一条线的高度 */
     height: var(--h);
     /* 线条背景颜色，透明变 */
-     background:linear-gradient(30deg,#00d 60%,#0aa 60%);
+     background:linear-gradient(14deg,#23d 60%,#4aa 60%);
     /* 设置旋转元素的基点位置 */
     transform-origin: 50% 0;
     /* 执行动画：动画名 时长 加速后减速 无限次播放 */
