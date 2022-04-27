@@ -62,7 +62,7 @@ body{
 }
 /* 鼠标移入，设置文本 */
 .star:hover::before{
-    content: "Merry Christmas";
+    content: "TOF";
 }
 ul{
     padding: 0;
