@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>祝福父亲节快乐</title>
+    <style>
+        /* 导航栏样式 */
+        .nav {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+
+        .nav a {
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        /* 添加背景延伸至屏幕全高，同时水平和垂直方向都居中 */
+        .bg {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 在左上角显示图片 */
+        .logo {
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 500px;
+        }
+
+        /* 添加动态文字和心跳动画 */
+        .greeting {
+            font-size: 64px;
+            text-shadow: 2px 2px #f9e4b7;
+            animation: heartbeat 1s infinite ease-in-out;
+            cursor: pointer;
+        }
+
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+            }
+            25% {
+                transform: scale(1.05);
+            }
+            50% {
+                transform: scale(1.08);
+            }
+            75% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* 鼠标悬停动画效果 */
+        .bg::before,
+        .bg::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            width: 20px;
+            height: 20px;
+            background-color: #f18e9f;
+            border-radius: 50%;
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .bg::after {
+            left: auto;
+            right: 10%;
+            background-color: #ec9c38;
+        }
+
+        .bg:hover::before,
+        .bg:hover::after {
+            top: calc(50% - 20px);
+            opacity: 1;
+            transform: translateX(-100px);
+        }
+    </style>
+</head>
+
+<body>
+<nav class="nav">
+    <a href="#">.</a>
+    <a href="#">.</a>
+</nav>
+<div class="bg" style="background-image: url('fdbg.jpg')">
+    <img class="logo" src="fd.jpg" alt="logo">
+    <div class="greeting">父亲节快乐！</div>
+</div>
+</body>
+
+</html>
